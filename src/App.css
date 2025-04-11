@@ -1,0 +1,394 @@
+html{
+  overflow: hidden;
+}
+
+.App{
+  width: 100vw;
+  height: 100vh;
+
+  user-select: none;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  background-color: #bababa;
+  background-image: linear-gradient(0deg, #bababa 0%, #f5f5f5 100%);
+}
+
+.navigation{
+  width: 100vw;
+  position: absolute;
+  color: black;
+  top:0;
+
+}
+
+.navigation_bar{
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+  display:flex
+  
+}
+.navigation_button{
+  font-weight: lighter;
+  transition: all 300ms ease;
+  margin-top: 20px;
+  margin-left:20px;
+  margin-right:20px;
+  padding-left: 20px;
+  padding-right:20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 12rem;
+  background-color: #f5f5f5 ;
+}
+
+button.navigation_button{
+  color: black;
+}
+
+button.navigation_button:hover{
+  color: black;
+  border-color: #ada4a4f1;
+}
+
+
+button.navigation_button.btn_selected{
+  background-color: black;
+  color:white;
+}
+
+button.navigation_button.btn_selected:hover{
+  border-color: #ffffff;
+}
+
+.big_logo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 18px;
+  margin-left: 20px;
+  width: 70px;
+  height: 35px
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+div.test{
+  position: absolute; 
+  bottom: 0; 
+  left: 0;
+}
+
+.btn_container{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-left: 5vw;
+  margin-bottom: 2vh;
+  height: 50%;
+}
+
+.btn{
+  margin-top:2vh;
+  font-weight: lighter;
+  transition: all 300ms ease;
+  padding-left: 35px;
+  padding-right:35px;
+  padding-top: 10px;
+  border-radius: 12rem;
+  font-size: 16px;
+  font-weight: 150rem;
+  background-color: #d3d3d3;
+  color: black;
+}
+
+.btn_color_1,
+.btn_color_2{
+  border: rgb(105,105,105) solid 0.5mm;
+}
+
+.btn_color_1:hover,
+.btn_color_2:hover{
+  cursor: pointer;
+  border: rgb(37, 36, 26) solid 0.5mm;
+  background-color: black;
+  color:silver;
+}
+
+
+.btn_color_2{
+  background-color: black;
+  color:white;
+}
+
+.interface_details{
+  display:flex;
+  flex-direction: row;
+  bottom: 26vh;
+  left: 0;
+  position: absolute;
+  margin-left: 3.8vw;
+  margin-right: 5vw;
+}
+
+.interface_menu{
+  left:0;
+  bottom:0;
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  gap: 30px;
+  justify-content: center;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 3vh;
+  
+}
+.interface{
+  position: absolute;
+  left:0;
+  bottom:0;
+  display: flex;
+  flex-direction: row;
+  height: 23vh;
+  width: 90vw;
+  gap: 30px;
+  justify-content: center;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 3vh;
+  } 
+
+.interface_item{
+  background-color: rgb(255, 255, 255);
+  flex:1;
+  border-radius: 25px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border: rgb(212,212,212) solid 0.6mm;
+}
+
+.color_list{
+  flex-direction: row;
+  justify-content: left;
+  align-items:start;
+  text-align: left;
+}
+
+.component_color{
+  position: absolute;
+  left: 1rem;
+  align-items: start;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  border: solid 2px #999999;
+  margin: auto;
+}
+
+.color_active{
+  border: solid 2px white;
+}
+
+#picker{
+  width: 64px;
+  height: 32px;
+  border-radius: 50%;
+  border: solid 2px #999999;
+  position: relative;
+  text-align: center;
+  left: 1rem;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.component_strong_text{
+  color: black;
+  position: relative;
+  text-align: left;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: 25px;
+  opacity: 1;
+}
+
+.component_text{
+  color: black;
+  font-family: sans-serif;
+  position: relative;
+  text-align: left;
+  margin-left: 25px;
+  margin-bottom: 14px;
+  font-size: small;
+}
+
+.component_text_tight_spaced{
+  color: black;
+  font-family: sans-serif;
+  position: relative;
+  text-align: left;
+  margin-left: 25px;
+  margin-bottom: 5px;
+  font-size: small;
+}
+
+.component_text_right{
+  color: black;
+  font-family: sans-serif;
+  position: relative;
+  text-align: right;
+  justify-content:end; 
+  align-self: stretch; 
+  margin-left:auto;
+  font-weight: bold;
+  font-size: small;
+  margin-right: 25px;
+}
+.text_column{
+  position: relative;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+}
+.text_row{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width:100%;
+  }
+
+  .color_row{
+    margin-left: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .color_item:hover {
+    cursor: pointer;
+    opacity: 0.9;
+  }
+  
+  .color_item {
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    margin-right: 7px;
+    border: solid 2px #999999;
+  }
+  
+  .color-active .color_item{
+    border: solid 2px rgb(16, 15, 15);
+ 
+  }
+  .item.item--active .color_item{
+    border: solid 2px white;
+  }
+
+
+  .container {
+    position:relative;
+    max-height: 137px;
+    flex-grow: 1;
+   }
+  
+  .slider-wrapper {
+    position: relative;
+    max-height: fit-content;
+    display: inline-block;
+    max-height: 100px;
+    max-width: 48rem;
+    margin: 0 auto;
+  }
+  
+  .slider {
+    margin-left: 18%;
+    max-height: 110px;
+    overflow: hidden;
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 0.5rem;
+    -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar Firefox */
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
+  
+  img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    max-width: 100%;
+    max-height: fit-content;
+    object-fit: contain;
+  }
+  
+  .slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+  .slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+  }
+  
+  .slider-nav a:hover {
+    opacity: 1;
+  }
+  
