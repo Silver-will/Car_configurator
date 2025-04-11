@@ -10,7 +10,7 @@ import { useEffect, useRef } from 'react'
 import { useFrame, useThree } from '@react-three/fiber'
 
 export function Lambo(props) {
-  const { nodes, materials } = useGLTF('/models/car/Lambo.glb')
+  const { nodes, materials } = useGLTF('./models/car/Lambo.glb')
   const { tires, sideMirrors, carPaintPrimary, carPaintSecondary, sideMirrorPrimary, sideMirrorSecondary } = useCustomization();
   
   const group = useRef();
@@ -89,4 +89,4 @@ export function Lambo(props) {
   )
 }
 
-useGLTF.preload('/models/car/Lambo.glb')
+useGLTF.preload('./models/car/Lambo.glb')
